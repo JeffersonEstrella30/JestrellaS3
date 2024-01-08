@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JestrellaS3.Vistas.Calificaciones"
+             Title="Calificaciones">
+    
+        <ContentPage.Content>
+            <StackLayout>
+            <Label x:Name="lblUsuarios" TextColor="Red" FontSize="16" HorizontalTextAlignment="End"/>
+            <Image Source="https://www.uisrael.edu.ec/wp-content/uploads/2023/01/logo-uisrael@2x-e1674848533171.png"/>
+            <Label Text="SISTEMAS DE CALIFICACIONES" HorizontalTextAlignment="Center" FontSize="18"/>
+            <DatePicker x:Name="dpFecha" Date="01/01/2024" Format="M/d/yyy"/>
+            <Label Text="SEGUIMIENTO 1 " HorizontalTextAlignment="Center" FontSize="18"/>
+            <Entry x:Name="txtNombre" Placeholder="Ingrese su Nombre" MaxLength="20"/>
+            <Entry x:Name="txtNota" Placeholder="Nota Seguimiento 1" MaxLength="3"/>
+            <Entry x:Name="txtExamen" Placeholder="Examen 1" MaxLength="3"/>
+            <Label Text="SEGUIMIENTO 2" HorizontalTextAlignment="Center" FontSize="18"/>
+            <Entry x:Name="txtNota2" Placeholder="Nota de Seguimiento 2" MaxLength="3"/>
+
+            <Entry x:Name="txtExamen2" Placeholder="Examen 2" MaxLength="3"/>
+            <Button x:Name="btncalcular1" Text="Calcular 1" Clicked="btncalcular1_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

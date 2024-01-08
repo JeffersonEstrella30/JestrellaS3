@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JestrellaS3.Login"
+             Title="Login">
+    <VerticalStackLayout>
+        <Label 
+            Text="Tarea 3 Semana 3 Jefferson Estrella" FontSize="25" HorizontalTextAlignment="Center"/>
+        <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Usuario" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+            <Label Text="Contraseña" FontSize="20" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtusuario" Placeholder="Ingrese usuario" Grid.Row="0" Grid.Column="1"/>
+            <Entry x:Name="txtcontraseña" Placeholder="Ingrese la contraseña" Grid.Row="1" Grid.Column="1"/>
+        </Grid>
+        <Button x:Name="btninicio" Text="Iniciar Sesión" Clicked="btninicio_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
